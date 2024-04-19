@@ -131,7 +131,6 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web</artifactId>
-            <!--<version>4.5.1</version>-->
         </dependency>
 
         <dependency>
@@ -141,7 +140,6 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-auth-jwt</artifactId>
-            <!--<version>4.5.7</version>-->
         </dependency>
         <dependency>
             <groupId>io.vertx</groupId>
@@ -169,47 +167,6 @@
             <artifactId>kotlinx-coroutines-core</artifactId>
             <version>1.7.3</version>
         </dependency>
-        <!--<dependency>
-            <groupId>io.ktor</groupId>
-            <artifactId>ktor-server-core-jvm</artifactId>
-            <version>2.3.10</version>
-        </dependency>
-        <dependency>
-            <groupId>io.ktor</groupId>
-            <artifactId>ktor-server-netty-jvm</artifactId>
-            <version>2.3.10</version>
-        </dependency>
-        <dependency>
-            <groupId>io.ktor</groupId>
-            <artifactId>ktor-server-auth-jwt</artifactId>
-            <version>2.3.10</version>
-        </dependency>-->
-        <dependency>
-            <groupId>io.ktor</groupId>
-            <artifactId>ktor-server-netty</artifactId>
-            <version>2.3.10</version>
-        </dependency>
-        <dependency>
-            <groupId>io.ktor</groupId>
-            <artifactId>ktor-server-auth</artifactId>
-            <version>2.3.10</version>
-        </dependency>
-        <dependency>
-            <groupId>io.ktor</groupId>
-            <artifactId>ktor-server-auth-jwt</artifactId>
-            <version>2.3.10</version>
-        </dependency>
-        <dependency>
-            <groupId>io.ktor</groupId>
-            <artifactId>ktor-server-content-negotiation</artifactId>
-            <version>2.3.10</version>
-        </dependency>
-        <dependency>
-            <groupId>io.ktor</groupId>
-            <artifactId>ktor-serialization-kotlinx-json</artifactId>
-            <version>2.3.10</version>
-        </dependency>
-
     </dependencies>
 
 

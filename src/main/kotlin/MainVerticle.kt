@@ -1,32 +1,9 @@
 package org.example
 
-/*
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
-
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
-}*/
-
 import io.vertx.core.*
 import io.vertx.core.http.HttpServerOptions
-import io.vertx.core.json.JsonObject
-import io.vertx.ext.auth.oauth2.OAuth2Auth
-import io.vertx.ext.auth.oauth2.impl.OAuth2AuthProviderImpl
-//import io.vertx.ext.auth.oauth2.impl.OAuth2TokenImpl
 import io.vertx.ext.web.Router
 import io.vertx.ext.web.RoutingContext
-import io.vertx.ext.web.client.WebClient
-import io.vertx.ext.web.codec.BodyCodec
-import io.vertx.ext.web.handler.CSRFHandler
 import io.vertx.ext.web.handler.SessionHandler
 import io.vertx.ext.web.sstore.LocalSessionStore
 import io.vertx.ext.web.sstore.SessionStore
@@ -34,8 +11,6 @@ import io.vertx.kotlin.coroutines.dispatcher
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.example.shared.LogToVertex
-import java.net.URI
-import java.time.Instant
 
 
 class MainVerticle : AbstractVerticle() {
@@ -50,8 +25,8 @@ class MainVerticle : AbstractVerticle() {
             router.route().handler(sessionHandler)
             router.get("/hello").handler { it.response().end("Hello from my route") }
 
-            val issuer = "https://rba8n7.logto.app/oidc"
-            val jwksuri = "https://rba8n7.logto.app/oidc/jwks"
+            val issuer = "https://llk8vm.logto.app/oidc"
+            val jwksuri = "https://llk8vm.logto.app/oidc/jwks"
             val logToVertex =  LogToVertex(vertx, issuer, jwksuri)
             val port = Integer.getInteger("http.port", 3000)
             val configuredRouter = logToVertex.configureSecurity(router)

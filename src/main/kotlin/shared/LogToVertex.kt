@@ -1,17 +1,13 @@
 package org.example.shared
 
 import io.vertx.core.Future
-import io.vertx.core.Handler
 import io.vertx.core.Vertx
 import io.vertx.core.json.JsonObject
 import io.vertx.ext.auth.JWTOptions
 import io.vertx.ext.auth.jwt.*
 
 import io.vertx.ext.web.handler.JWTAuthHandler
-import io.vertx.ext.auth.oauth2.OAuth2Auth
-//import io.vertx.ext.auth.oauth2.OAuth2ClientOptions
 import io.vertx.ext.web.Router
-import io.vertx.ext.web.RoutingContext
 import io.vertx.ext.web.client.WebClient
 import io.vertx.ext.web.codec.BodyCodec
 import io.vertx.kotlin.coroutines.await
